@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: Norse;
+    src: url(assets/Norse.otf);
+}
+@font-face {
+    font-family: Norse-Bold;
+    src: url(assets/Norsebold.otf);
+}
+
+
+#logo-text {
+    font-family: Norse-Bold;
+    font-size: 7rem; 
+}
+
