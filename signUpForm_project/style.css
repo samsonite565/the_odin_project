@@ -9,9 +9,89 @@
     src: url(assets/Norsebold.otf);
 }
 
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/Poppins-Regular.ttf);
+}
 
+@font-face {
+    font-family: Poppins-Italic;
+    src: url(assets/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(assets/Poppins-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+header {
+    font-family: Poppins-Regular;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-size: 1em;
+}
+.left-side_contents {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left_side_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    transform: translate(0,125px);
+    column-gap: 1em;
+    width: 100%;
+}
+
+.main_logo {
+    width: 15%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
 #logo-text {
     font-family: Norse-Bold;
-    font-size: 7rem; 
+    font-size: 6rem; 
+    color: white;
+}
+
+.right_side_container {
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.right_side_heading {
+    align-items: start;
+
+}
+
+.right_side_form {
+    justify-items: center;
+
+}
+.right_side_footer {
+
 }
 

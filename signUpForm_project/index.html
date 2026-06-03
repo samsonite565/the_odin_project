@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -8,41 +8,57 @@
     <title>"Sign-Up Fourm</title>  
 
   </head>
+  
   <body>
-    <img src="./assets/background.jpg"> 
-
-    <div>
-      <img src="./assets/odin-lined_logo.png" alt="odin_logo" id="main_logo">
-      <h1 id="logo-text">ODIN</h1>
+    <div class="left-side_contents"> <!--Containter for the log and the images -->
+      <div class="left_side_title">
+        <img src="./assets/odin-lined_logo.png" alt="odin_logo" width="380px" height="508" class="main_logo">
+        <h1 id="logo-text">ODIN</h1>
+      </div>
     </div>
-
-    <h3>This is not a real online service! You know you need something like this in your life to help you realize our deepest dreams. Sign up <i>now</i> to get started</h3> 
-    <h3>You know you want to</h3> 
-  <form action=".index.js" method="GET">
-  
-    <fieldset>
-      <p>First Name</p>
-      <input for="first_name" type="text" required placeholder="John">
-  
-      <p>Last Name</p>
-      <input for="last_name" type="text" required placeholder="Doe">
-  
-      <p>Email</p>
-      <input for="email" type="text" required placeholder="johndoe@abc.com">
-  
-      <p>Phone Number</p>
-      <input for="phone_number" type="text" required placeholder="123-456-7890">
-  
-      <p>Password</p>
-      <input for="password" type="text" required>
-  
-      <p>Confirm Password</p>
-      <input for="confirmed_password" type="text" required></br></br>
-      <button>Create Account</button>
-    </fieldset>
-  </form>
-
-    <p>Already have an account? Log in</p> 
+    <div class="right_side_container"> <!--Containter for the main header and the form-->
+      <div class="right_side_heading">
+        <header>This is not a real online service! You know you need something like this in your life to help you realize
+          our
+          deepest dreams. Sign up <i>now</i> to get started.</header>
+        <header>You know you want to!</header>
+      </div>
+      <div class="right_side_form">
+        <form action=".index.js" method="GET">
+          <fieldset class="form_container">
+    
+            <div class="lines" >
+              <p>First Name</p>
+              <input for="first_name" type="text" required placeholder="John">
+    
+              <p>Last Name</p>
+              <input for="last_name" type="text" required placeholder="Doe">
+            </div>
+    
+            <div class="lines">
+              <p>Email</p>
+              <input for="email" type="text" required placeholder="johndoe@abc.com">
+    
+              <p>Phone Number</p>
+              <input for="phone_number" type="text" required placeholder="123-456-7890">
+            </div>
+    
+            <div class="lines">
+              <p>Password</p>
+              <input for="password" type="text" required>
+    
+              <p>Confirm Password</p>
+              <input for="confirmed_password" type="text" required></br></br>
+            </div>
+            <button>Create Account</button>
+          </fieldset>
+        </form>
+    
+      </div>
+      <div class="right_side_footer">
+        <p>Already have an account? Log in</p>
+      </div> 
+    </div>
   </body>
-
-</html>
+  
+  </html>
