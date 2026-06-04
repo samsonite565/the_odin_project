@@ -32,8 +32,6 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1em;
 }
 
 header {
@@ -50,9 +48,10 @@ p {
     background-size: cover;
     background-position: center;
     position: relative;
-    width: 25vw;
+    width: auto;
     height: 100vh;
     display: flex;
+    flex:1;
 }
 
 .left_side_title {
@@ -78,20 +77,26 @@ p {
 }
 
 .right_side_container {
-    border: 8px solid black;
     display: flex;
     flex-direction: column;
+    flex: 2;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding-left: 1.3em;
+    gap: 43px;
+    background: lightpink;
 }
 .right_side_heading {
     align-items: start;
+    margin-bottom: 0px;
 
 }
 
 .right_side_form {
     justify-items: center;
-
+    font-size: 1.25em;
 }
 .right_side_footer {
-
+  align-items: revert
 }
 
