@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
 @font-face {
   font-family: Norse;
   src: url(assets/Norse.otf);
 }
+
 @font-face {
   font-family: Norse-Bold;
   src: url(assets/Norsebold.otf);
@@ -41,7 +42,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 header {
@@ -53,6 +54,7 @@ p {
   font-family: Poppins-Regular;
   font-size: 1em;
 }
+
 .left-side_contents {
   background-image: url(assets/background.jpg);
   background-size: cover;
@@ -61,7 +63,7 @@ p {
   width: auto;
   height: 100vh;
   display: flex;
-  flex:1;
+  flex: 1;
 }
 
 .left_side_title {
@@ -70,7 +72,7 @@ p {
   justify-content: center;
   height: 15vh;
   background-color: hsla(0, 0%, 0%, 0.603);
-  transform: translate(0,125px);
+  transform: translate(0, 125px);
   column-gap: 1em;
   width: 100%;
 }
@@ -80,9 +82,10 @@ p {
   height: auto;
   aspect-ratio: 1/1;
 }
+
 #logo-text {
   font-family: Norse-Bold;
-  font-size: 6rem; 
+  font-size: 6rem;
   color: var(--primary-color);
 }
 
@@ -96,23 +99,25 @@ p {
   padding-right: 200px;
   background: var(--secodary-color);
 }
+
 .right_side_heading {
   align-items: start;
   margin-bottom: 0px;
   font-family: Poppins-Bold;
   font-weight: bold;
-
 }
 
 .right_side_form {
   justify-items: center;
   font-size: 1.25em;
 }
+
 .right_side_footer {
-  align-items: revert
+  align-items: revert;
 }
+
 .right_side_footer p:nth-child(2) {
-  padding-top:15px;
+  padding-top: 15px;
 }
 
 .form_container {
@@ -132,9 +137,9 @@ button {
   background-color: var(--third-color);
   color: var(--primary-color);
 }
+
 input {
   padding: 10px 10px;
-  font-size:15px;
+  font-size: 15px;
   border-radius: 4px;
 }
-

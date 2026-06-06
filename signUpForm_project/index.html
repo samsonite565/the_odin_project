@@ -1,64 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>"Sign-Up Fourm</title>  
 
-  </head>
-  <body>
-    <div class="left-side_contents"> <!--Container for the log and the images -->
-      <div class="left_side_title">
-        <img src="./assets/odin-lined_logo.png" alt="odin_logo" width="380px" height="508" class="main_logo">
-        <h1 id="logo-text">ODIN</h1>
-      </div>
-    </div>
-    <div class="right_side_container"> <!--Container for the right side that has the form, header, and footer-->
-      <div class="right_side_heading">
-        <header>This is not a real online service! You know you need something like this in your life to help you realize
-          our
-          deepest dreams. Sign up <i>now</i> to get started.</header>
-        <header>You know you want to!</header><br></br>
-      </div>
-      <div class="right_side_form"> <!--Start of the main forum-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>"Sign-Up Fourm</title>
 
-        <form action=".index.js" method="GET">
-          <fieldset class="form_container">
-    
-            <div class="lines" >
-              <p>First Name</p>
-              <input for="first_name" type="text" required placeholder="John">
-    
-              <p>Last Name</p>
-              <input for="last_name" type="text" required placeholder="Doe">
-            </div>
-    
-            <div class="lines">
-              <p>Email</p>
-              <input for="email" type="text" required placeholder="johndoe@abc.com">
-    
-              <p>Phone Number</p>
-              <input for="phone_number" type="text" required placeholder="123-456-7890">
-            </div>
-    
-            <div class="lines">
-              <p>Password</p>
-              <input for="password" type="text" required>
-    
-              <p>Confirm Password</p>
-              <input for="confirmed_password" type="text" required>
-            </div>
-          </fieldset>
-        </form>
-    
-      </div>
-      <div class="right_side_footer">
-        <button>Create Account</button>
-        <p>Already have an account? Log in</p>
-      </div> 
-    </div>
-  </body>
-  
-  </html>
+</head>
+<div class="left-side_contents"><!--Container for the log and the images -->
+  <div class="left_side_title"><img class="main_logo" src="./assets/odin-lined_logo.png" alt="odin_logo" width="380px"
+      height="508" />
+    <h1 id="logo-text">ODIN</h1>
+  </div>
+</div>
+<div class="right_side_container"><!--Container for the right side that has the form, header, and footer-->
+  <div class="right_side_heading">
+    <header>This is not a real online service! You know you need something like this in your life to help you realize
+      our deepest dreams. Sign up <em> now </em> to get started.</header>
+    <header>You know you want to!</header>
+  </div>
+  <div class="right_side_form"><!--Start of the main forum-->
+    <form action=".index.js" method="GET">
+      <fieldset class="form_container">
+        <div class="lines">
+          <p>First Name</p>
+          <input required="" type="text" placeholder="John" />
+          <p>Last Name</p>
+          <input required="" type="text" placeholder="Doe" />
+        </div>
+        <div class="lines">
+          <p>Email</p>
+          <input required="" type="text" placeholder="johndoe@abc.com" />
+          <p>Phone Number</p>
+          <input required="" type="text" placeholder="123-456-7890" />
+        </div>
+        <div class="lines">
+          <p>Password</p>
+          <input required="" type="text" />
+          <p>Confirm Password</p>
+          <input required="" type="text" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="right_side_footer"><button> Create Account </button>
+    <p>Already have an account? Log in</p>
+  </div>
+</div>
+</body>
+
+</html>
