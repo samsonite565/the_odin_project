@@ -24,8 +24,22 @@
 
 .wrapper {
   display: inline-grid;
-  background-color: skyblue;
   gap: 10px;
+  grid-template-columns: 25% 100vw; 
+  grid-template-rows: repeat(7, 100%);
+
+}
+.sidebar {
+  background-color: black;
+  grid-row: 1/7;
 }
 
-
+.navigation {
+  background-color: green;
+}
+.navigation {
+  background-color: green;
+}
+.content {
+  background-color: red;
+}
