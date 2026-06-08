@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!--Link to CSS file-->
     <title>Admin Dashboard</title>
+
 <body>
     <main class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar__title"></div>
-        </div>
-        <div class="navigation"></div>
-        <div class="content"></div>
+        <section class="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-logo">
+                    <svg class="sidebar-main-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                    </svg>
+                    <h2 class="sidebar-heading-title">Dashboard</h3>
+                </div>
+                <div class="sidebar-navigation-list">
+                    <menu class="sidebar__navigationlistSet1">
+                        <li class="dual-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-3q-.425 0-.712-.288T14 20v-5q0-.425-.288-.712T13 14h-2q-.425 0-.712.288T10 15v5q0 .425-.288.713T9 21H6q-.825 0-1.412-.587T4 19" />
+                            </svg>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="dual-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                <path fill="currentColor"
+                                    d="M5.85 17.1q1.275-.975 2.85-1.537T12 15t3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4T6.337 6.338T4 12q0 1.475.488 2.775T5.85 17.1M12 13q-1.475 0-2.488-1.012T8.5 9.5t1.013-2.488T12 6t2.488 1.013T15.5 9.5t-1.012 2.488T12 13m0 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22" />
+                            </svg>
+                            <a href="">Profile</a>
+                        </li>
+                        <li class="dual-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-3.586l-3.707 3.707A1 1 0 0 1 6 17v-3H5a3 3 0 0 1-3-3V5zm20 4v6c0 1-.6 3-3 3h-1v3c0 .333-.2 1-1 1c-.203 0-.368-.043-.5-.113L12.613 18H9l3-3h3c1.333 0 4-.8 4-4V6c1 0 3 .6 3 3z"
+                                        fill="currentColor" />
+                                </g>
+                            </svg>
+                            <a href="#">Messages</a>
+                        </li>
+                        <li class="dual-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M22 12c0-5.523-4.477-10-10-10a9.97 9.97 0 0 0-7 2.859V3.75a.75.75 0 0 0-1.5 0v3.5c0 .414.336.75.75.75h3.5a.75.75 0 0 0 0-1.5H5.519a8.5 8.5 0 1 1 2.348 12.93l-.27-.15l-3.986 1.111l1.113-3.984l-.151-.27A8.46 8.46 0 0 1 3.5 12c0-.675.079-1.332.227-1.962c.08-.301.065-.888-.536-1.02c-.613-.134-.87.355-.935.719h.001A10 10 0 0 0 2 12a9.96 9.96 0 0 0 1.115 4.592l-1.068 3.823a1.25 1.25 0 0 0 1.54 1.54l3.826-1.067A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10M8.17 5.55a7.5 7.5 0 1 1 .185 13.006l-.63-.35l-2.674.745l.747-2.672l-.352-.63A7.46 7.46 0 0 1 4.5 12c0-.594.069-1.17.199-1.723a2.04 2.04 0 0 0-.039-1.136A2 2 0 0 0 4.605 9H7.75a1.75 1.75 0 0 0 .42-3.45M11.25 8a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 0-1.5H12V8.75a.75.75 0 0 0-.75-.75" />
+                            </svg>
+                            <a href="#">History</a>
+                        </li>
+                        <li class="dual-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 24 24"><!-- Icon from Fluent UI System Icons by Microsoft Corporation - https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE -->
+                                <path fill="currentColor"
+                                    d="M19.995 4.097A2.25 2.25 0 0 0 17.75 2H6.25l-.154.005A2.25 2.25 0 0 0 4 4.251v15.498l.005.154A2.25 2.25 0 0 0 6.25 22h7.568l-1.5-1.5H6.25l-.102-.007a.75.75 0 0 1-.648-.743V4.251l.007-.102a.75.75 0 0 1 .743-.648h11.5l.102.007a.75.75 0 0 1 .648.743v11.567l1.159-1.159q.16-.16.34-.28V4.25zm-3.707 17.902h-.076a.75.75 0 0 1-.493-.219l-2.5-2.502a.75.75 0 0 1 1.062-1.06l1.969 1.971l4.47-4.47a.75.75 0 1 1 1.06 1.061l-5 5a.75.75 0 0 1-.492.219M13.84 16.5a2 2 0 0 0-.182 0h-2.413a.75.75 0 0 1 0-1.5h5.004a.75.75 0 1 1 0 1.5zM9 7.752a1 1 0 1 1-2 0a1 1 0 0 1 2 0m1.496-.002a.75.75 0 0 1 .75-.75h5.004a.75.75 0 1 1 0 1.5h-5.004a.75.75 0 0 1-.75-.75m.75 3.25a.75.75 0 0 0 0 1.5h5.004a.75.75 0 1 0 0-1.5zM8 12.75a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2.998a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
+                            </svg>
+                            <a href="#">Tasks</a>
+                        </li>
+                        <li class="dual-menu">Communication</li>
+                    </menu>
+                </div>
+                <div class="navigation-list-set">
+                    <menu class="sidebar__navigationlistSet2">
+                        <li>Setting</li>
+                        <li>Support</li>
+                        <li>Privacy</li>
+                    </menu>
+                </div>
+            </div>
+        </section>
+        <div class="navigation">Navibar</div>
+        <div class="content">Contents Middle</div>
     </main>
 </body>
+
 </html>
