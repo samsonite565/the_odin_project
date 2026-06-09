@@ -1,41 +1,50 @@
-@font-face {
-  font-display: swap;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assests/fonts/roboto-v51-latin-regular.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+@layer global {
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assests/fonts/roboto-v51-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/roboto-v51-latin-700.woff2') format('woff2');
+  }
+
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  p {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
 }
 
-
-@font-face {
-  font-display: swap;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/roboto-v51-latin-700.woff2') format('woff2');
-}
-
-*,
-::before,
-::after {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Roboto';
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
 menu li {
   font-family: 'Roboto';
   list-style-type: none;
@@ -52,7 +61,6 @@ menu li {
 .sidebar {
   background-color: skyblue;
   grid-row: 1/6;
-  box-shadow: 2px 12px 20px 1px hsla(244, 94%, 41%, 0.479);
   height: 100vh;
   display: flex;
   align-content: center;
@@ -60,14 +68,13 @@ menu li {
 .sidebar-title {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 3em;
-  align-content: ;
+  justify-content: flex-start;
+  padding: 2rem;
 }
 
 .sidebar-logo{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -83,7 +90,7 @@ menu li {
   font-family: Roboto;
   font-weight: 700;
   line-height: 3.2em;
-  padding: 4rem 0;
+
 }
 .navigation-list-set {
   padding: 4rem 0;
@@ -95,18 +102,22 @@ menu li {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0;
+  padding: 10px 0;
 }
 .dual-menu {
   display: flex;
   align-items: center;
   gap: 1em;
+  fill: currentColor;
 }
+/* Top Navigation styles begin from here */
 
-.navigation {
-  grid-row: 1/2;
-}
+.navigation { /*Top Search bar. Includes the top nav bar as well */
+  background-color:lightpink;
+  grid-row: 1/2; }
 
+
+/* Main Cards styles are found here  */
 .content {
   grid-row: 2/6;
   grid-column: 2/3;
