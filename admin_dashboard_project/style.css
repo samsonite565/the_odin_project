@@ -1,4 +1,10 @@
 @layer global {
+  :root {
+    --bg-color: rgb(250, 241, 230);
+    --secondary-color: hsl(197, 71%, 73%);
+    --crds-highlight-color: hsl(73, 82%, 49%);
+  }
+
   @font-face {
     font-display: swap;
     font-family: 'Roboto';
@@ -59,7 +65,7 @@ menu li {
 }
 
 .sidebar {
-  background-color: skyblue;
+  background-color: var(--secondary-color);
   grid-row: 1/6;
   height: 100vh;
   display: flex;
@@ -113,12 +119,52 @@ menu li {
 /* Top Navigation styles begin from here */
 
 .navigation { /*Top Search bar. Includes the top nav bar as well */
-  background-color:lightpink;
-  grid-row: 1/2; }
+  background-color: hsl(0, 100%, 100%);
+  grid-row: 1/2; 
+  padding: 3rem;
+  box-shadow: 0px 6px 12px 5px hsla(351, 100%, 1%, 0.301);
+}
+.first-halfbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1rem;
+}
+.searchbar {
+  display: flex;
+  flex-basis: 1;
+  gap: 1rem;
+  align-items: center;
+
+  & input {
+    font-size: 1.5em;
+    width: 40vw;
+    border-radius: 2rem;
+    border: none;
+    text-align:left;
+    padding: .3em .5em; 
+    background-color: var(--bg-color);
+
+  }
+}
+.right-side-userdetails {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+
+}
 
 
 /* Main Cards styles are found here  */
 .content {
   grid-row: 2/6;
   grid-column: 2/3;
+  background-color:var(--bg-color);
+}
+.right-nav {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 3em;
 }
