@@ -1,55 +1,6 @@
-@layer global {
-  :root {
-    --bg-color: rgb(250, 241, 230);
-    --secondary-color: hsl(197, 71%, 73%);
-    --crds-highlight-color: hsl(73, 82%, 49%);
-  }
-
-  @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assests/fonts/roboto-v51-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-  @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/assets/fonts/roboto-v51-latin-700.woff2') format('woff2');
-  }
-
-  *,
-  ::before,
-  ::after {
-    margin: 0;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  h1,
-  h2,
-  h3 {
-    font-family: 'Roboto';
-    font-weight: 700;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  p {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 1.2em;
-  }
-}
+@import "/styles/variables.css";
+@import "/styles/components.css";
+@import "/styles/global.css";
 
 menu li {
   font-family: 'Roboto';
@@ -121,7 +72,7 @@ menu li {
 .navigation { /*Top Search bar. Includes the top nav bar as well */
   background-color: hsl(0, 100%, 100%);
   grid-row: 1/2; 
-  padding: 3rem;
+  padding: 2rem 3.5rem;
   box-shadow: 0px 6px 12px 5px hsla(351, 100%, 1%, 0.301);
 }
 .first-halfbar {
@@ -156,7 +107,6 @@ menu li {
 
 }
 
-
 /* Main Cards styles are found here  */
 .content {
   grid-row: 2/6;
@@ -166,5 +116,20 @@ menu li {
 .right-nav {
   padding: 1rem;
   background-color: var(--secondary-color);
-  border-radius: 3em;
+}
+.second-half {
+  display:flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.user-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
+  gap: 10px;
+  svg {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
 }

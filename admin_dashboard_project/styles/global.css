@@ -1,0 +1,47 @@
+@layer global {
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assests/fonts/roboto-v51-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/roboto-v51-latin-700.woff2') format('woff2');
+  }
+
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  p {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+}

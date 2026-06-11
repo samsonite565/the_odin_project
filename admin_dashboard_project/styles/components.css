@@ -1,0 +1,19 @@
+@import "/styles/variables.css" layer(variables);
+@layer components {
+    .button {
+        border-radius: 10rem;
+        width: 6em;
+        background-color: var(--bg-color);
+        text-align: center;
+        
+        &:hover {
+            color: var(--hover-state) ;
+        }
+    }
+
+    .card {
+        display: flex;
+        gap: 5px;
+        align-content: center;
+    }
+}
