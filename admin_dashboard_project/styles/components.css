@@ -1,0 +1,28 @@
+@import "/styles/variables.css" layer(variables);
+@layer components {
+    .button {
+        border-radius: 10rem;
+        width: 6em;
+        background-color: var(--bg-color);
+        text-align: center;
+        
+        &:hover {
+            color: var(--hover-state) ;
+        }
+    }
+
+    .profile-card {
+        display: flex;
+        gap: 5px;
+        align-content: center;
+    }
+
+    .content-card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0px 6px 12px 5px hsla(351, 100%, 1%, 0.301);
+        padding: 10px;
+        border-radius: 1rem;
+    }
+}

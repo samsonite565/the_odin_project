@@ -1,0 +1,10 @@
+@layer variables {
+    :root {
+        --bg-color: rgb(250, 241, 230);
+        --secondary-color: hsl(197, 71%, 73%);
+        --crds-highlight-color: hsl(73, 82%, 49%);
+        --lg-font-size: calc(23px/16px * 1rem);
+        --hover-state: hsla(195, 19%, 12%, 0.712);
+        --card-accent: hsl(47, 75%, 49%);
+    }
+}
