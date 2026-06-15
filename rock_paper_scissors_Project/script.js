@@ -22,7 +22,17 @@ function getComputerChoice() {
 };
 
 function getHumanChoice (choice) {
-  promt("Rock")
+  //Checks for the user's input to see if its either rock paper or sciccors
+  //checks if not throws an console.error() prompts the user to rewite the prompt\
+  
+  prompt("Select you choice, Rock, Paper, or Scissors").toLowerCase();
+  //Checking user input
 };
+
+function playRound() {
+  // This function compares the computer choice against the user's choice,
+  // it determins who scored, adds to the scoreboad, runs the round again.
+  pass
+}
 
 getComputerChoice();
