@@ -1,38 +1,62 @@
-//create another function that asks for the users input rock paper of sciccors
-// create a way to keep track of the player score as well as the computer's score
-// Create a new function named playRound.
-// Define two parameters for playRound: humanChoice and computerChoice. Use these two parameters to take the human and computer choices as arguments.
-// Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
-// Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
-// Increment the humanScore or computerScore variable based on the round winner.
+const prompt = require("prompt-sync")();
+let usrInput = prompt("What is your guess? ");
+let humanScore = 0;
 let computerScore = 0;
-let userScore = 0;
-function getComputerChoice() {
-  let randomNumber = Math.floor(Math.random() * [4 - 1] +1);
 
-//Adds a value to each number based on the selection of the random value
+function getComputerguess() {
+  let randomNumber = Math.floor(Math.random() * [4 - 1] + 1);
 
   if (randomNumber === 1) {
-    console.log('Paper')
+    return "Paper";
   } else if (randomNumber === 2) {
-    console.log('Rock')
+    return "Rock";
   } else if (randomNumber === 3) {
-    console.log('Scissors')
+    return "Scissors";
   }
-};
-
-function getHumanChoice (choice) {
-  //Checks for the user's input to see if its either rock paper or sciccors
-  //checks if not throws an console.error() prompts the user to rewite the prompt\
-  
-  prompt("Select you choice, Rock, Paper, or Scissors").toLowerCase();
-  //Checking user input
-};
-
-function playRound() {
-  // This function compares the computer choice against the user's choice,
-  // it determins who scored, adds to the scoreboad, runs the round again.
-  pass
+  //Function returns a string value
 }
 
-getComputerChoice();
+function getHumanGuess(guess) {
+  guess.toLowerCase();
+  if (guess.length === 4) return "Rock";
+  else if (guess.length === 5) return "Paper";
+  else if (guess.length === 8) return "Scissors";
+  else {
+    console.log("Please enter a valid answer");
+    return null;
+  }
+  //Function returns a string value
+}
+
+function playRound(computerChoice, humanChoice) {
+  if (humanChoice.length === computerChoice.length) {
+    console.log(
+      `Human choice: ${humanChoice} and ${computerChoice} are the same`,
+    );
+  } else if (humanChoice.length > computerChoice.length) {
+    console.log(`Human wins this one, you choose ${humanChoice}`);
+    humanScore += 1;
+  } else if (computerChoice.length > humanChoice.length) {
+    console.log(`Computer wins this one, it choose ${computerChoice}`);
+    computerScore += 1;
+  } else if (
+    (computerChoice.length == 8 && humanChoice.length == 4) ||
+    (humanChoice.length == 8 && computerChoice.length == 4)
+  ) {
+    console.log(`ROCK BEATS SCISSORS`);
+  }
+}
+
+function playGame() {
+  console.log(`Computer Score: ${computerScore}`);
+  console.log(`Human Score: ${humanScore}`);
+
+  while (humanScore <= 5 && computerScore <= 5) {
+    usrInput = prompt("What is your guess now? ");
+    playRound(getComputerguess(), getHumanGuess(usrInput));
+    console.log(`Human score: ${humanScore}`);
+    console.log(`Computer score: ${computerScore}`);
+  }
+}
+
+playGame();
