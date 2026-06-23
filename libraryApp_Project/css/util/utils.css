@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  padding-inline: 0 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}

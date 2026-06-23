@@ -1,13 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Library App</title>
-</head>
-<body>
-   <h1>Library Storage Locker</h1> 
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <title>Library App</title>
+    </head>
+    <body>
+        <header>
+            <h1>Library Storage Locker</h1>
+            <a href="#" class="btn">New Book</a>
+        </header>
+        <fieldset>
+            <form action="./submitBooks" method="POST">
+                <div>
+                    <label for="Title">Title: </label>
+                    <input type="text" required />
+                </div>
+                <div>
+                    <label for="Author">Author: </label>
+                    <input type="text" required />
+                </div>
+                <div>
+                    <label for="Pages">Number of Pages: </label>
+                    <input type="text" required />
+                </div>
+                <div>
+                    <label for="bookRead">Read the book</label>
+                    <input type="checkbox" required />
+                </div>
+                <a class="btn">Submit</a>
+            </form>
+        </fieldset>
+    </body>
 </html>

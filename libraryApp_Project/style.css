@@ -1,1 +1,3 @@
-@import "./css/resets.css";
+@import "./css/base/resets.css";
+@import "./css/base/layouts.css";
+@import "./css/componets/buttons.css";
