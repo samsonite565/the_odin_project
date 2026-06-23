@@ -1,3 +1,9 @@
+:root {
+  --bkgd-clr: #293681 --txt-clor: #95ccdd;
+  --btn-clor: #4274d9;
+  --btn-clr-hover: #d0e7e6;
+}
+
 *,
 ::after,
 ::before {
@@ -14,30 +20,33 @@ html {
   width: 100%;
 }
 
-body {
-  min-height: 100vh;
-}
-
+body,
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
-  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-input {
-  border-radius: 5px;
-  padding: 3px;
-  line-height: 1.5;
+input,
+button,
+select {
+  font: inherit;
 }
