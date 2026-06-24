@@ -6,6 +6,7 @@
   border-radius: 5px;
   padding: 0 5px;
   color: var(--txt-clor);
+  cursor: pointer;
 }
 .btn:hover {
   background-color: var(--btn-clr-hover);

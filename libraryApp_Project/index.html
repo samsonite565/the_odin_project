@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
         <title>Library App</title>
     </head>
     <body>
@@ -15,22 +14,22 @@
         <fieldset>
             <form action="./submitBooks" method="POST">
                 <div>
-                    <label for="Title">Title: </label>
-                    <input type="text" required />
+                    <label for="title">Title: </label>
+                    <input id="bookTitle" type="text" required />
                 </div>
                 <div>
-                    <label for="Author">Author: </label>
-                    <input type="text" required />
+                    <label for="author">Author: </label>
+                    <input id="bookAuthor" type="text" required />
                 </div>
                 <div>
-                    <label for="Pages">Number of Pages: </label>
-                    <input type="text" required />
+                    <label for="pages">Number of Pages: </label>
+                    <input id="pages" type="text" required />
                 </div>
                 <div>
                     <label for="bookRead">Read the book</label>
                     <input type="checkbox" required />
                 </div>
-                <a class="btn">Submit</a>
+                <a class="btn" id="submitBtn">Submit</a>
             </form>
         </fieldset>
         <div>
@@ -40,4 +39,6 @@
             <p>ID #</p>
         </div>
     </body>
+
+    <script src="script.js"></script>
 </html>
