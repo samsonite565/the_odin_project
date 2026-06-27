@@ -1,3 +1,9 @@
 @import "./css/base/resets.css";
-@import "css/util/utils.css";
+@import "./css/util/utils.css";
+@import "./css/componets/cards.css";
 @import "./css/componets/buttons.css";
+
+
+.bookInfoForm {
+    display: none;
+}

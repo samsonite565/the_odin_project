@@ -1,13 +1,13 @@
 @import "./css/base/resets.css";
 
 .btn {
-  background-color: var(--btn-clor);
-  text-align: center;
-  border-radius: 5px;
-  padding: 0 5px;
-  color: var(--txt-clor);
-  cursor: pointer;
+    background-color: var(--btn-clor);
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: var(--txt-clor);
+    cursor: pointer;
 }
 .btn:hover {
-  background-color: var(--btn-clr-hover);
+    background-color: var(--btn-clr-hover);
 }
