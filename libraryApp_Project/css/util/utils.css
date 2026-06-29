@@ -25,7 +25,7 @@
     justify-self: center;
 }
 
-justify-evenly {
+.justify-evenly {
     justify-content: space-evenly;
 }
 
@@ -53,4 +53,20 @@ justify-evenly {
 
 .d-{
     display: none;
+}
+
+.wdth-25 {
+    width: 25vw;
+}
+
+.wdth-50 {
+    width: 50vw;
+}
+
+.wdth-100 {
+    width: 100vw;
+}
+
+.wdth-min {
+    width:min-content;
 }

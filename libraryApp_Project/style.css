@@ -3,7 +3,6 @@
 @import "./css/componets/cards.css";
 @import "./css/componets/buttons.css";
 
-
 .bookInfoForm {
-    display: none;
+  display: none;
 }

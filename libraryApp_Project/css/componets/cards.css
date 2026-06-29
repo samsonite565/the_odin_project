@@ -3,9 +3,13 @@
 .card {
     position: relative;
     padding: 1rem;
-    box-shadow: -1px -1px 15px 1px black;
     background-color: var(--card-clr);
+    width: 14rem;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #dee2e6;
 }
+
 .card:hover {
     padding: 1rem;
     box-shadow: -1px -1px 13px 1px black;

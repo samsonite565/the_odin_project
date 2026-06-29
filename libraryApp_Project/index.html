@@ -1,46 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>library app</title>
-    </head>
-    <body class="container flex-col justify-center align-center">
-        <header class="container flex-col">
-            <h1>Library Storage Locker</h1>
-            <a href="#" class="btn" id="newBookBtn">New Book</a> 
-        </header>
-        <fieldset>
-            <form action="./submitBooks" method="POST" class="bookInfoForm flex-col gap pst-inherit ">
-                <div>
-                    <label for="title">Title: </label>
-                    <input id="bookTitle" type="text" required />
-                </div>
-                <div>
-                    <label for="author">Author: </label>
-                    <input id="bookAuthor" type="text" required />
-                </div>
-                <div>
-                    <label for="pages">Number of Pages: </label>
-                    <input id="pages" type="text" required />
-                </div>
-                <div>
-                    <label for="bookRead">Read the book</label>
-                    <input type="checkbox" required />
-                </div>
-                <a class="btn" id="submitBtn">Submit</a>
-            </form>
-        </fieldset>
-        <div class="flex-row">
-            <div class="card align-center bdr-radius pst-inherit d-none">
-                <h3>Name of book</h3>
-                <h4>Author of book</h4>
-                <h5>Number of pages in Book</h5>
-                <p>ID #</p>
-            </div>
-        </div>
-    </body>
 
-    <script src="script.js"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>library app</title>
+</head>
+
+<body class="container flex-col justify-evenly align-center">
+    <header class="container flex-col">
+        <h1>Library Storage Locker</h1>
+        <a href="#" class="btn" id="newBookBtn">New Book</a>
+    </header>
+    <fieldset>
+        <form action="./submitBooks" method="POST" class="bookInfoForm flex-col gap pst-inherit wdth-min">
+            <div>
+                <label for="title">Title: </label>
+                <input id="bookTitle" class="wdth-25" type="text" required />
+            </div>
+            <div>
+                <label for="author">Author: </label>
+                <input id="bookAuthor" class="wdth-25" type="text" required />
+            </div>
+            <div>
+                <label for="pages">Number of Pages: </label>
+                <input id="pages" class="wdth-25" type="text" required />
+            </div>
+            <div>
+                <label for="bookRead">Read the book</label>
+                <input type="checkbox" class="wdth-25" required />
+            </div>
+            <a class="btn" id="submitBtn">Submit</a>
+        </form>
+    </fieldset>
+    <div class="flex-row wdth-50 justify-center" style="flex-wrap: wrap">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
 </html>
