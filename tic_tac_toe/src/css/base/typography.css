@@ -1,0 +1,96 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/src/assets/fonts/inter-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/src/assets/fonts/inter-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/src/assets/fonts/inter-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/src/assets/fonts/inter-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/src/assets/fonts/inter-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --ft-fm: "Inter";
+    /*---font weights---*/
+    --sm-fw: "400";
+    --md-fw: "500";
+    --lg-fw: "600";
+    --xlg-fw: "700";
+
+    /*--- font sizes---*/
+    --fs-400: 1.125rem;
+    --fs-500: 1.2rem;
+    --fs-600: 1.8rem;
+    --fs-700: 2rem;
+
+}
+
+.fs-64 {
+    font-size: var(--fs-700);
+}
+
+.fs-32 {
+    font-size: var(--fs-600);
+}
+
+.fs-16 {
+    font-size: var(--fs-400);
+}
+
+.fw-bld {
+    font-weight: var(--lg-fw);
+}
+
+.fnt-fam {
+    font-family: var(--ft-fm);
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+

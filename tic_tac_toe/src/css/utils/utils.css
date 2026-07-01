@@ -1,0 +1,44 @@
+.flx-rw {
+    display: flex;
+    gap: 1rem;
+}
+
+.flx-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grd {
+    display: grid;
+    gap: 1rem;
+}
+
+.justify-ctr {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.align-ctr {
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    padding: 1em 2em;
+}
+.justify-spbtw {
+    justify-content: space-between; 
+    justify-items: space-between;
+}
+
+.gap-lap{
+    gap: calc(100vw / 5);
+}
+
+.gap-mob{
+    gap: calc(100vw / 8);
+}
+

@@ -1,0 +1,53 @@
+@import "/src/css/base/typography.css";
+
+:root {
+    /*---colors----*/
+    --prime-clr: rgb(255, 250, 243);
+    --secondary-clr: rgb(255, 242, 219);
+    --tertiary-clr: rgb(255, 229, 191);
+    --fnal-clr: rgb(246, 36, 64);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    line-height: 1px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+    font-family: var(--ft-fm);
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
