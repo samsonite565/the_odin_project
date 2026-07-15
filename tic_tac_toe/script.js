@@ -1,9 +1,7 @@
-
 /**
- * Init of the player. Defines the chararstics of the player
- *
- * @pairam {human_player} playerName
- * @returns{}
+ *Factory function that initiates the player object
+ @returns ([scoreValue, appendsScore]) adds the the remaining score, 
+  gets the remaining score of the player object.
  */
 function player() {
     let score = 0;
@@ -20,63 +18,52 @@ function player() {
         return score;
     }
 
-
     // Main Return 
     return {
         addScore,
         getScore,
-        gamesPlayed,
         gamesLeft,
     };
 }
 
 
 /**
- * createBoard factory function.
- * Desc: Creates the inital board for the game 
- * @returns {[drawBoard,board]|{function,Array}} an array of 3 rows and 3 columns
+ * Game factory function. that creates a game object. 
+ *It hs an Inheritence from the player object where.
+ Create the board, checks for wins and resets the board.
+ * @returns {[tic-toe-board, theWinner, startsGame, restetstheBoard]} 
  */
 function game() {
-    // Creating the board array
-    const board = [];
-    const gamePlayer = Object.create(player);
-
-    function drawBoard() {
-        let rows = 0;
-        // Drawing the Board
-        while (rows < 3) {
-            let columns = 0;
-            const currentRow = [];
-
-            while (columns < 3) {
-                currentRow.push("");
-                columns++;
-            }
-            board.push(currentRow);
-            rows++;
-        }
-    };
+    // Creating the board Array
+    const board = ["", "", "", "", "", "", "", "", ""]; //Board
+    const gamePlayer = Object.create(player); //Inheritence 
+    const getBoard = () => board;
 
     function winCombos() {
+        let combos = []; //Combinations for wins
         for (let i = 0; i < 3; i++) {
-            return [i * 3, i * 3 + 1, i * 3 + 2]
+            combos.push([i * 3, i * 3 + 1, i * 3 + 2]); //Rows
+            combos.push([i, i + 3, i + 6]); //Columns
         }
+        combos.push([0, 4, 8]); //Diagonals
+        combos.push([2, 4, 6]); //Diagonals
+        return combos;
     }
 
     function playGame() {
     }
-
-
-    function checkWinner(gamePlayer) {
-
+    // Check the winning combos against a list of player's selections and if the list is correct return winner
+    function checkWinner() {
+        return { winCombos, gamePlayer }
+    }
+    function resetBoard() {
+        return board.fill("");
     }
 
     return {
-        drawBoard,
-        board,
-        winCombos,
+        getBoard,
+        checkWinner,
         playGame,
+        resetBoard
     }
-
-};
-const gameboard = game();
+}

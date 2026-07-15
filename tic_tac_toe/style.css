@@ -1,3 +1,11 @@
 @import "/src/css/base/resets.css";
 @import "/src/css/base/typography.css";
 @import "/src/css/utils/utils.css";
+
+
+.tic-toe-board {
+    border: black;
+    background-color:antiquewhite ;
+}
+
+

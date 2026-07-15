@@ -11,7 +11,15 @@
 
 .grd {
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
+}
+
+.grd-col {
+    grid-template-columns: repeat(3, 8rem);
+}
+
+.grd-row {
+    grid-template-rows: repeat(3, 8rem);
 }
 
 .justify-ctr {
@@ -25,20 +33,21 @@
     align-self: center;
     align-items: center;
 }
+
 .container {
     width: 100%;
     padding: 1em 2em;
 }
+
 .justify-spbtw {
-    justify-content: space-between; 
+    justify-content: space-between;
     justify-items: space-between;
 }
 
-.gap-lap{
+.gap-lap {
     gap: calc(100vw / 5);
 }
 
-.gap-mob{
+.gap-mob {
     gap: calc(100vw / 8);
 }
-
