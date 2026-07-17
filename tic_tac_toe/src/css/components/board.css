@@ -1,0 +1,48 @@
+@import "/src/css/base/resets.css";
+
+.tic-toe-board {
+    width: 100vw;
+    height: 100vh;
+}
+
+.cell {
+    border: solid 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top Column None */
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+/* Border Left */
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+/* Right Column */
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+/* Bottom Row  */
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.markx::before,
+.markx::after {
+    content: "";
+    width: calc(var(--mark-width) * .15);
+    height: calc(var(--mark-height) * .15);
+}

@@ -6,12 +6,10 @@
 .flx-col {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .grd {
     display: grid;
-    gap: .5rem;
 }
 
 .grd-col {
@@ -22,15 +20,27 @@
     grid-template-rows: repeat(3, 8rem);
 }
 
-.justify-ctr {
+.jstfy-ctr {
     justify-content: center;
-    justify-items: center;
+}
+
+.jstfy-slf-ctr {
     justify-self: center;
+}
+
+.jstfy-itms-ctr {
+    justify-items: center;
 }
 
 .align-ctr {
     align-content: center;
+}
+
+.align-slf-ctr {
     align-self: center;
+}
+
+.align-itms-ctr {
     align-items: center;
 }
 

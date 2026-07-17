@@ -6,6 +6,20 @@
     --secondary-clr: rgb(255, 242, 219);
     --tertiary-clr: rgb(255, 229, 191);
     --fnal-clr: rgb(246, 36, 64);
+    /*--- font sizes ---*/
+    --fs-800: 6.25rem;
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+    /*colors*/
+    --prime-clr: rgb(255, 250, 243);
+    --secondary-clr: rgb(255, 242, 219);
+    --tertiary-clr: rgb(255, 229, 191);
+    --fnal-clr: rgb(246, 36, 64);
+    /*Cell attributies*/
+    --cell-height: 100px;
+    --cell-width: 100px;
+    --mark-width: calc(var(--cell-width) * .9);
+    --mark-height: calc(var(--cell-width) * .9);
 }
 
 *,
@@ -49,5 +63,3 @@ textarea {
     font-family: inherit;
     font-size: inherit;
 }
-
-
