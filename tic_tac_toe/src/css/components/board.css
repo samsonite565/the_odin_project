@@ -10,9 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    position: relative;
 }
 
-/* Top Column None */
+/* Top Column */
 .cell:nth-child(1),
 .cell:nth-child(2),
 .cell:nth-child(3) {
@@ -33,16 +35,52 @@
     border-right: none;
 }
 
-/* Bottom Row  */
+/* Bottom Row */
 .cell:nth-child(7),
 .cell:nth-child(8),
 .cell:nth-child(9) {
     border-bottom: none;
 }
 
+/* Cross */
 .markx::before,
 .markx::after {
     content: "";
-    width: calc(var(--mark-width) * .15);
-    height: calc(var(--mark-height) * .15);
+    position: absolute;
+    width: calc(var(--mark-width) * .2);
+    height: calc(var(--mark-height) * .9);
+    background-color: black;
+    border-radius: 5px;
+}
+
+.markx::before {
+    transform: rotate(45deg)
+}
+
+.markx::after {
+    transform: rotate(-45deg)
+}
+
+/* Circle */
+.marko::before,
+.marko::after {
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-width) * 1);
+    height: calc(var(--mark-height) * 1);
+    background-color: black;
+    border-radius: 100%;
+}
+
+.marko::before {
+    width: calc(var(--mark-width) * .9);
+    height: calc(var(--mark-height) * .9);
+    background-color: black;
+}
+
+.marko::after {
+    width: calc(var(--mark-width)* .7);
+    height: calc(var(--mark-height) * .7);
+    background-color: white;
+
 }

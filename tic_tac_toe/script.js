@@ -1,59 +1,42 @@
-/**
- *Factory function that initiates the player object
- @returns ([scoreValue, appendsScore]) adds the the remaining score, 
-  gets the remaining score of the player object.
- */
-function player() {
+function player(marker) {
     let score = 0;
     let gamesPlayed = 0;
-    const maxGames = 5;//Max games to be played is 5
+    const maxGames = 5;// Max games to be played is 5
 
-    /**
-     * gamesLeft.
-     */
     function gamesLeft() {
         return maxGames - gamesPlayed;
     };
-    /**
-     * addScore.
-     */
     function addScore() {
         score++;
     }
-    /**
-     * getScore.
-     */
     function getScore() {
         return score;
     }
 
     // Main Return 
     return {
+        marker,
         addScore,
         getScore,
         gamesLeft,
     };
 }
 
-
-/**
- * Game factory function. that creates a game object. 
- *It hs an Inheritence from the player object where.
- Create the board, checks for wins and resets the board.
- * @returns {Function,Function,Function,Function} winCombos, playGame, checkWinner, resetBoard
- */
 function game() {
     // Creating the board Array
     const board = ["", "", "", "", "", "", "", "", ""]; //Board
-    const gamePlayer = Object.create(player); //Inheritence 
-    /**
-     * getBoard.
-     */
+    const player1 = player("marko");
+    const player2 = player("markx");
+    let activePlayer = player1
     const getBoard = () => board;
 
-    /**
-     * winCombos.
-     */
+    function switchTurns() {
+        activePlayer = activePlayer === player1 ? player2 : player1;
+    }
+
+    const getActivePlayer = () => activePlayer;
+
+    // All the winning Combinations for the tic tac toe game
     function winCombos() {
         let combos = []; //Combinations for wins
         for (let i = 0; i < 3; i++) {
@@ -65,29 +48,61 @@ function game() {
         return combos;
     }
 
-    /**
-     * playGame.
-     */
-    function playGame() {
-    }
-    // Check the winning combos against a list of player's selections and if the list is correct return winner
-    /**
-     * checkWinner.
-     */
     function checkWinner() {
-        return { winCombos, gamePlayer }
+        const combos = winCombos()
+        for (const combo of combos) {
+            const [a, b, c] = combo;
+            if (board[a] !== "" && board[a] === board[b] && board[a] === board[c]) {
+                return board[a];
+            }
+        }
+        return null;
     }
-    /**
-     * resetBoard.
-     */
+
     function resetBoard() {
         return board.fill("");
     }
 
     return {
         getBoard,
+        getActivePlayer,
+        switchTurns,
         checkWinner,
-        playGame,
+        winCombos,
         resetBoard
     }
 }
+
+const cells = document.querySelectorAll(".cell")
+const ticTacToe = game()
+
+
+function clearGameBoard() {
+    cells.forEach(cell => {
+        cell.classList.remove("markx", "marko");
+    });
+};
+
+
+//The Actual Game 
+cells.forEach((cell, index) => {
+    cell.addEventListener('click', () => {
+        const board = ticTacToe.getBoard();
+        if (board[index] !== "") return;
+
+        const currentPlayer = ticTacToe.getActivePlayer();
+        board[index] = currentPlayer.marker;
+        cell.classList.add(currentPlayer.marker);
+
+        const winner = ticTacToe.checkWinner();
+        if (winner) {
+            ticTacToe.resetBoard();
+            alert(`${currentPlayer.marker} has won`)
+            clearGameBoard();
+            return;
+        }
+        ticTacToe.switchTurns();
+    })
+})
+
+
